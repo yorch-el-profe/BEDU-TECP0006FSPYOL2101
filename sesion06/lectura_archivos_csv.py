@@ -1,4 +1,5 @@
 import csv
+import io
 
 # Escritura de un archivo CSV
 with open("archivos/padron_electoral_fake.csv", "a", newline="") as archivo:
@@ -7,7 +8,7 @@ with open("archivos/padron_electoral_fake.csv", "a", newline="") as archivo:
   writer.writerow(["Juan Perez", "40", "Avenida Reforma #223, Cuauhtemoc"])
 
 # Lectura de un archivo CSV
-with open("archivos/padron_electoral_fake.csv", "r") as archivo:
+with io.open("archivos/padron_electoral_fake.csv", "r", encoding="utf-8") as archivo:
   # Leyendo y parseando el archivo (interpretando las comas)
   reader = csv.reader(archivo)
   for linea in reader:

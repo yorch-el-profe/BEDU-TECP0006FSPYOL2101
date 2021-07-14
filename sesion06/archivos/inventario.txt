@@ -2,3 +2,4 @@ Agua Mineral Peñafiel|15
 Trident Menta|10
 Coca Cola 600ml|13
 Pepsi 3l|30
+Coca Cola 2l|25

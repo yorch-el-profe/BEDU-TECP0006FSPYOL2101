@@ -1,2 +1,3 @@
 def es_palindromo(cadena):
-  pass
+  resultado = cadena.lower().replace(" ", "")
+  return resultado == resultado[::-1]
